@@ -1,10 +1,17 @@
 package com.example.gridviewapp;
 
+import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 public class ImageAdapter extends BaseAdapter {
+	
+	private  Context mcontext;
+	public ImageAdapter(Context context){
+		 mcontext=context;
+		
+	}
 
 	@Override
 	public int getCount() {
